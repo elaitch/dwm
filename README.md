@@ -9,7 +9,6 @@ Current configuration includes the following patches:
 + attachaside
 + bstack
 + hide vacant tags
-+ new master
 + nextprev
 + pertag
 + push
@@ -18,4 +17,4 @@ Current configuration includes the following patches:
 
 Default blue #005577, Feb 2015
 
-![02/15](https://raw.githubusercontent.com/elaitch/dwm-xft/master/current.png)
+![02/15](https://raw.githubusercontent.com/elaitch/dwm/master/current.png)
