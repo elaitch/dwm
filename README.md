@@ -13,6 +13,7 @@ Current configuration includes the following patches:
 + nextprev
 + pertag
 + push
++ single window no border
 + ~~xft~~ (no longer needed as of this [commit] (http://git.suckless.org/dwm/commit/?id=14343e69cc596b847f71f1e825d3019ab1a29aa8))
 
 Default blue #005577, Feb 2015
