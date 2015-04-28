@@ -30,6 +30,9 @@ static const Rule rules[] = {
         /* class      instance    title       tags mask     isfloating   monitor */
 	{ "feh",     NULL,       NULL,       0,            True,        -1 },
 	{  "Qbittorrent",     NULL,       NULL,   1 << 4,       False,       -1 },
+	{  NULL,     NULL,      "ranger",   1 << 3,       False,       -1 },
+	{  NULL,     NULL,      "cmus",   1 << 8,       False,       -1 },
+	{  NULL,      NULL,       "Firefox Preferences",       0,            True, -1 },
 	{  NULL,      NULL,       "Firefox Preferences",       0,            True, -1 },
         {  NULL,      NULL,       "Tab Mix Plus Options",       0,            True, -1 },
         {  NULL,      NULL,       "Classic Theme Restorer",       0,            True, -1 },
@@ -71,6 +74,8 @@ static const char *termcmd[]  = { "termite", NULL };
 static const char *firefox[]  = { "firefox", NULL };
 static const char   *chrome[] = { "google-chrome-stable", NULL };
 static const char   *bemenu[] = { "/home/lawren/bin/beemenu", NULL };
+static const char *ranger[] = { "st", "-t", "ranger", "-e", "ranger", NULL }; 
+static const char *cmus[] = { "st", "-t", "cmus", "-e", "cmus", NULL }; 
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -79,6 +84,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
         { MODKEY,                       XK_a,      spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = chrome } },
+	{ MODKEY,                       XK_r,      spawn,          {.v = ranger } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = cmus } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
