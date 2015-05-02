@@ -33,6 +33,7 @@ static const Rule rules[] = {
 	{  NULL,     NULL,      "ranger",   1 << 3,       False,       -1 },
 	{  NULL,     NULL,      "cmus",   1 << 8,       False,       -1 },
 	{  NULL,      NULL,       "Firefox Preferences",       0,            True, -1 },
+	{  NULL,      NULL,       "Library",       0,            True, -1 },
 	{  NULL,      NULL,       "Firefox Preferences",       0,            True, -1 },
         {  NULL,      NULL,       "Tab Mix Plus Options",       0,            True, -1 },
         {  NULL,      NULL,       "Classic Theme Restorer",       0,            True, -1 },
