@@ -38,6 +38,8 @@ static const Rule rules[] = {
         {  NULL,      NULL,       "Tab Mix Plus Options",       0,            True, -1 },
         {  NULL,      NULL,       "Classic Theme Restorer",       0,            True, -1 },
         {  "google-chrome-stable",     NULL,       NULL,   1 << 1,       False,       -1 },
+	{ "Pidgin",     NULL,       NULL,       0,            True,        -1 },
+
 };
 
 /* layout(s) */
