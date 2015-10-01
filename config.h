@@ -77,8 +77,8 @@ static const char *termcmd[]  = { "termite", NULL };
 static const char *firefox[]  = { "firefox", NULL };
 static const char   *chrome[] = { "google-chrome-stable", NULL };
 static const char   *bemenu[] = { "/home/lawren/bin/beemenu", NULL };
-static const char *ranger[] = { "st", "-t", "ranger", "-e", "ranger", NULL }; 
-static const char *cmus[] = { "st", "-t", "cmus", "-e", "cmus", NULL }; 
+static const char *ranger[] = { "termite", "-t", "ranger", "-e", "ranger", NULL }; 
+static const char *cmus[] = { "termite", "-t", "cmus", "-e", "cmus", NULL }; 
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -113,10 +113,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,      view_adjacent,  { .i = +1 } },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_Left,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_Right, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_Left,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_Right, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
