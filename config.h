@@ -5,7 +5,7 @@ static const char *fonts[] = {
 	"Ubuntu Mono:size=11",
 	"Dejavu Sans Mono:size=11",
 };
-static const char dmenufont[] = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char dmenufont[] = "Ubuntu Mono:size=11";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -76,14 +76,12 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "termite", NULL };
 static const char *firefox[]  = { "firefox", NULL };
 static const char   *chrome[] = { "google-chrome-stable", NULL };
-static const char   *bemenu[] = { "/home/lawren/bin/beemenu", NULL };
 static const char *ranger[] = { "termite", "-t", "ranger", "-e", "ranger", NULL }; 
 static const char *cmus[] = { "termite", "-t", "cmus", "-e", "cmus", NULL }; 
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_p,      spawn,          {.v = bemenu } },
+	{ MODKEY,             XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
         { MODKEY,                       XK_a,      spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = chrome } },
